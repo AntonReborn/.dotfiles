@@ -7,16 +7,17 @@
         create: true
     ~/.tmux.conf: tmux/tmux.conf
     ~/.config/utils/:
-        path: utils/**
+        path: utils/
         create: true
     ~/.config/fish/:
-        path: fish/**
+        path: fish/
         create: true
+        force: true
     ~/.config/kitty/:
-        path: kitty/**
+        path: kitty/
         create: true
     ~/.config/nvim/:
-        path: neovim/**
+        path: neovim/
         create: true
 
 - create:
