@@ -1,0 +1,5 @@
+[core]
+	autocrlf = input
+[user]
+	name = mitrus
+	email = antonreborn777@gmail.com
