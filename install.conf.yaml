@@ -5,6 +5,27 @@
     ~/.ssh/config:
         path: ssh/config
         create: true
-    ~/.tmux.conf: tmux.conf
+    ~/.tmux.conf: tmux/tmux.conf
+    ~/.config/utils/:
+        path: utils/**
+        create: true
+    ~/.config/fish/:
+        path: fish/**
+        create: true
+    ~/.config/kitty/:
+        path: kitty/**
+        create: true
+    ~/.config/nvim/:
+        path: neovim/**
+        create: true
+
+- create:
+  - ~/Projects 
+  - ~/RustroverProjects 
+  - ~/CLionProjects
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+
 
 
