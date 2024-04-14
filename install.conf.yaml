@@ -1,14 +1,20 @@
 - clean: ['~']
 
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+
 - link:
     ~/.gitconfig: gitconfig
     ~/.ssh/config:
         path: ssh/config
         create: true
-    ~/.tmux.conf: tmux/tmux.conf
+    ~/.tmux.conf: 
+        path: tmux/tmux.conf
+        force: true
     ~/.config/utils/:
         path: utils/
         create: true
+        force: true
     ~/.config/fish/:
         path: fish/
         create: true
@@ -16,17 +22,17 @@
     ~/.config/kitty/:
         path: kitty/
         create: true
+        force: true
     ~/.config/nvim/:
         path: neovim/
         create: true
+        force: true
 
 - create:
   - ~/Projects 
   - ~/RustroverProjects 
   - ~/CLionProjects
 
-- shell:
-  - [git submodule update --init --recursive, Installing submodules]
 
 
 
