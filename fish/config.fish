@@ -1,4 +1,17 @@
 fish_vi_key_bindings
+theme_gruvbox dark medium
+
+zoxide init fish | source
+
+# Cursor styles
+set -gx fish_vi_force_cursor 1
+set -gx fish_cursor_default block
+set -gx fish_cursor_insert line blink
+set -gx fish_cursor_visual block
+
+# Favorite projects fzf
+bind --mode default \cf '~/.config/utils/tmux-sessionizer-favorites.sh'
+bind --mode insert \cf '~/.config/utils/tmux-sessionizer-favorites.sh'
 
 if status is-interactive
     if string match -q -- 'tmux*' $TERM
