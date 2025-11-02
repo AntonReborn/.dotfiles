@@ -12,14 +12,6 @@
         path: utils/
         create: true
         force: true
-    ~/.config/fish/:
-        path: fish/
-        create: true
-        force: true
-    ~/.config/kitty/:
-        path: kitty/
-        create: true
-        force: true
     ~/.config/nvim/:
         path: neovim/
         create: true
